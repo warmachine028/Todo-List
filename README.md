@@ -1,4 +1,9 @@
 # TODO LIST
 
 ## Table of Contents
-- [Int]
+
+- [Introduction](#introduction)
+
+## Introduction
+
+- This is a basic TODO list in REACT JS
