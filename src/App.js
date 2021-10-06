@@ -5,7 +5,7 @@ import { AddTodo } from "./MyComponents/AddTodos"
 import { Footer } from "./MyComponents/Footer"
 import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from "react"
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
 	let initTodo = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : []
@@ -29,7 +29,7 @@ function App() {
 			<Router>
 				<Header title="My Todos List" searchBar={false} />
 				<Switch>
-					<Route exact path="/" render={() => {
+					<Route exact path="/Home" render={() => {
 						return (
 							<>
 								<AddTodo addTodo={addTodo} />
